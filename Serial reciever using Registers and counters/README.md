@@ -1,5 +1,5 @@
 
-# Project: Implementation of a Statistical Calculator
+# Project:  Implementation of a Statistical Calculator
 
 This project involves the implementation of various components that can be used in a statistical calculator using Verilog. It includes modules for counters, multiplexers, shift registers, and a serial data receiver, along with testbenches to validate their functionalities. The project is designed to demonstrate the use of SystemVerilog for hardware description and is intended for simulation with the ModelSim software.
 
