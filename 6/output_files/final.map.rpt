@@ -1,0 +1,969 @@
+Analysis & Synthesis report for final
+Wed Jan 10 08:01:23 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |final|controllerQ:inst2|ps
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: controllerQ:inst2
+ 14. Parameter Settings for User Entity Instance: datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component
+ 15. Parameter Settings for User Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component
+ 16. Parameter Settings for User Entity Instance: datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component
+ 17. Parameter Settings for User Entity Instance: datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component
+ 18. Parameter Settings for User Entity Instance: datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component
+ 19. Parameter Settings for Inferred Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1
+ 20. Parameter Settings for Inferred Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_out:mac_out2
+ 21. lpm_mult Parameter Settings by Entity Instance
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jan 10 08:01:23 2024       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; final                                       ;
+; Top-level Entity Name              ; final                                       ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 428                                         ;
+;     Total combinational functions  ; 424                                         ;
+;     Dedicated logic registers      ; 61                                          ;
+; Total registers                    ; 61                                          ;
+; Total pins                         ; 52                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CGX15BF14A7     ;                    ;
+; Top-level entity name                                            ; final              ; final              ;
+; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+---------+
+; final.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/NanoCamp/Desktop/madar manteqi/6/final.bdf                               ;         ;
+; controllerq.v                    ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v                           ;         ;
+; datapath.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/NanoCamp/Desktop/madar manteqi/6/datapath.bdf                            ;         ;
+; comparator.v                     ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/NanoCamp/Desktop/madar manteqi/6/comparator.v                            ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_compare.tdf         ;         ;
+; comptree.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/comptree.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
+; db/cmpr_fug.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cmpr_fug.tdf                         ;         ;
+; registerq.v                      ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/registerq.v                             ;         ;
+; multiplier.v                     ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/NanoCamp/Desktop/madar manteqi/6/multiplier.v                            ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; multcore.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/multcore.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; db/mult_ijn.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf                         ;         ;
+; mulitplexer.v                    ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/NanoCamp/Desktop/madar manteqi/6/mulitplexer.v                           ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/muxlut.inc              ;         ;
+; db/mux_n0d.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mux_n0d.tdf                          ;         ;
+; romq.v                           ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v                                  ;         ;
+; counter.v                        ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/NanoCamp/Desktop/madar manteqi/6/counter.v                               ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
+; db/cntr_1lk.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf                         ;         ;
+; addsub.v                         ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/NanoCamp/Desktop/madar manteqi/6/addsub.v                                ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_6sg.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/add_sub_6sg.tdf                      ;         ;
+; alt_mac_mult.tdf                 ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/alt_mac_mult.tdf        ;         ;
+; lpm_mult.inc                     ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_mult.inc            ;         ;
+; db/mac_mult_r2h1.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mac_mult_r2h1.tdf                    ;         ;
+; db/mult_jul.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf                         ;         ;
+; alt_mac_out.tdf                  ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/alt_mac_out.tdf         ;         ;
+; alt_zaccum.inc                   ; yes             ; Megafunction                             ; c:/users/nanocamp/appdata/quartus/libraries/megafunctions/alt_zaccum.inc          ;         ;
+; db/mac_out_kv82.tdf              ; yes             ; Auto-Generated Megafunction              ; C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mac_out_kv82.tdf                     ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 52               ;
+;                          ;                  ;
+; DSP block 9-bit elements ; 0                ;
+;                          ;                  ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 62               ;
+; Total fan-out            ; 1648             ;
+; Average fan-out          ; 2.80             ;
++--------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                   ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Entity Name   ; Library Name ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+
+; |final                                           ; 424 (1)             ; 61 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 52   ; 0            ; |final                                                                                                                                                       ; final         ; work         ;
+;    |controllerQ:inst2|                           ; 10 (10)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|controllerQ:inst2                                                                                                                                     ; controllerQ   ; work         ;
+;    |datapath:inst|                               ; 413 (0)             ; 52 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst                                                                                                                                         ; datapath      ; work         ;
+;       |Mulitplexer:inst|                         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|Mulitplexer:inst                                                                                                                        ; Mulitplexer   ; work         ;
+;          |lpm_mux:LPM_MUX_component|             ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component                                                                                              ; lpm_mux       ; work         ;
+;             |mux_n0d:auto_generated|             ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component|mux_n0d:auto_generated                                                                       ; mux_n0d       ; work         ;
+;       |addsub:inst9|                             ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|addsub:inst9                                                                                                                            ; addsub        ; work         ;
+;          |lpm_add_sub:LPM_ADD_SUB_component|     ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component                                                                                          ; lpm_add_sub   ; work         ;
+;             |add_sub_6sg:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component|add_sub_6sg:auto_generated                                                               ; add_sub_6sg   ; work         ;
+;       |comparator:inst2|                         ; 26 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|comparator:inst2                                                                                                                        ; comparator    ; work         ;
+;          |lpm_compare:LPM_COMPARE_component|     ; 26 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component                                                                                      ; lpm_compare   ; work         ;
+;             |cmpr_fug:auto_generated|            ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component|cmpr_fug:auto_generated                                                              ; cmpr_fug      ; work         ;
+;       |counter:inst3|                            ; 5 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|counter:inst3                                                                                                                           ; counter       ; work         ;
+;          |lpm_counter:LPM_COUNTER_component|     ; 5 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component                                                                                         ; lpm_counter   ; work         ;
+;             |cntr_1lk:auto_generated|            ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated                                                                 ; cntr_1lk      ; work         ;
+;       |multiplier:inst4|                         ; 282 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4                                                                                                                        ; multiplier    ; work         ;
+;          |lpm_mult:lpm_mult_component|           ; 282 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component                                                                                            ; lpm_mult      ; work         ;
+;             |mult_ijn:auto_generated|            ; 282 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated                                                                    ; mult_ijn      ; work         ;
+;                |alt_mac_mult:mac_mult1|          ; 282 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1                                             ; alt_mac_mult  ; work         ;
+;                   |mac_mult_r2h1:auto_generated| ; 282 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated                ; mac_mult_r2h1 ; work         ;
+;                      |mult_jul:mult1|            ; 282 (282)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1 ; mult_jul      ; work         ;
+;       |registerQ:rreg|                           ; 18 (18)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|registerQ:rreg                                                                                                                          ; registerQ     ; work         ;
+;       |registerQ:treg|                           ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|registerQ:treg                                                                                                                          ; registerQ     ; work         ;
+;       |registerQ:xreg|                           ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|registerQ:xreg                                                                                                                          ; registerQ     ; work         ;
+;       |romQ:inst1|                               ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final|datapath:inst|romQ:inst1                                                                                                                              ; romQ          ; work         ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------+
+; State Machine - |final|controllerQ:inst2|ps                                                                    ;
++------------+------------+----------+----------+----------+----------+---------+---------+---------+------------+
+; Name       ; ps.compare ; ps.mult4 ; ps.mult3 ; ps.mult2 ; ps.mult1 ; ps.load ; ps.init ; ps.idle ; ps.sub_add ;
++------------+------------+----------+----------+----------+----------+---------+---------+---------+------------+
+; ps.idle    ; 0          ; 0        ; 0        ; 0        ; 0        ; 0       ; 0       ; 0       ; 0          ;
+; ps.init    ; 0          ; 0        ; 0        ; 0        ; 0        ; 0       ; 1       ; 1       ; 0          ;
+; ps.load    ; 0          ; 0        ; 0        ; 0        ; 0        ; 1       ; 0       ; 1       ; 0          ;
+; ps.mult1   ; 0          ; 0        ; 0        ; 0        ; 1        ; 0       ; 0       ; 1       ; 0          ;
+; ps.mult2   ; 0          ; 0        ; 0        ; 1        ; 0        ; 0       ; 0       ; 1       ; 0          ;
+; ps.mult3   ; 0          ; 0        ; 1        ; 0        ; 0        ; 0       ; 0       ; 1       ; 0          ;
+; ps.mult4   ; 0          ; 1        ; 0        ; 0        ; 0        ; 0       ; 0       ; 1       ; 0          ;
+; ps.compare ; 1          ; 0        ; 0        ; 0        ; 0        ; 0       ; 0       ; 1       ; 0          ;
+; ps.sub_add ; 0          ; 0        ; 0        ; 0        ; 0        ; 0       ; 0       ; 1       ; 1          ;
++------------+------------+----------+----------+----------+----------+---------+---------+---------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                          ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; controllerQ:inst2|ci_adder                          ; controllerQ:inst2|WideOr2     ; yes                    ;
+; datapath:inst|romQ:inst1|temp[0]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[1]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[2]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[3]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[4]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[5]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[8]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[7]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; datapath:inst|romQ:inst1|temp[6]                    ; datapath:inst|romQ:inst1|Mux6 ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                               ;                        ;
++-----------------------------------------------------+-------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; controllerQ:inst2|ps~4                ; Lost fanout        ;
+; controllerQ:inst2|ps~5                ; Lost fanout        ;
+; controllerQ:inst2|ps~6                ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 61    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Asynchronous Clear ; 45    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 52    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 48 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |final|datapath:inst|registerQ:rreg|regout[9] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controllerQ:inst2 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; idle           ; 0000  ; Unsigned Binary                       ;
+; init           ; 0001  ; Unsigned Binary                       ;
+; load           ; 0010  ; Unsigned Binary                       ;
+; mult1          ; 0011  ; Unsigned Binary                       ;
+; mult2          ; 0100  ; Unsigned Binary                       ;
+; mult3          ; 0101  ; Unsigned Binary                       ;
+; mult4          ; 0110  ; Unsigned Binary                       ;
+; compare        ; 0111  ; Unsigned Binary                       ;
+; sub_add        ; 1000  ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+----------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                                 ;
++------------------------+---------------+----------------------------------------------------------------------+
+; lpm_width              ; 16            ; Signed Integer                                                       ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                              ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                              ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                              ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                              ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                              ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                              ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                   ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                 ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                              ;
+; CBXI_PARAMETER         ; cmpr_fug      ; Untyped                                                              ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                         ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                       ;
++------------------------+---------------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component ;
++------------------------------------------------+---------------+----------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                   ;
++------------------------------------------------+---------------+----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                         ;
+; LPM_WIDTHA                                     ; 16            ; Signed Integer                         ;
+; LPM_WIDTHB                                     ; 16            ; Signed Integer                         ;
+; LPM_WIDTHP                                     ; 32            ; Signed Integer                         ;
+; LPM_WIDTHR                                     ; 0             ; Untyped                                ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                                ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                ;
+; LATENCY                                        ; 0             ; Untyped                                ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                ;
+; USE_EAB                                        ; OFF           ; Untyped                                ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                ;
+; CBXI_PARAMETER                                 ; mult_ijn      ; Untyped                                ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                ;
++------------------------------------------------+---------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component ;
++------------------------+---------------+--------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                         ;
++------------------------+---------------+--------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                               ;
+; LPM_WIDTH              ; 16            ; Signed Integer                                               ;
+; LPM_SIZE               ; 2             ; Signed Integer                                               ;
+; LPM_WIDTHS             ; 1             ; Signed Integer                                               ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                      ;
+; CBXI_PARAMETER         ; mux_n0d       ; Untyped                                                      ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                      ;
++------------------------+---------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component ;
++------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                              ;
++------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTH              ; 4             ; Signed Integer                                                    ;
+; LPM_DIRECTION          ; UP            ; Untyped                                                           ;
+; LPM_MODULUS            ; 0             ; Untyped                                                           ;
+; LPM_AVALUE             ; UNUSED        ; Untyped                                                           ;
+; LPM_SVALUE             ; 0             ; Untyped                                                           ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED   ; Untyped                                                           ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                           ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                ;
+; NOT_GATE_PUSH_BACK     ; ON            ; NOT_GATE_PUSH_BACK                                                ;
+; CARRY_CNT_EN           ; SMART         ; Untyped                                                           ;
+; LABWIDE_SCLR           ; ON            ; Untyped                                                           ;
+; USE_NEW_VERSION        ; TRUE          ; Untyped                                                           ;
+; CBXI_PARAMETER         ; cntr_1lk      ; Untyped                                                           ;
++------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+---------------+------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                             ;
++------------------------+---------------+------------------------------------------------------------------+
+; LPM_WIDTH              ; 16            ; Signed Integer                                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                          ;
+; LPM_DIRECTION          ; DEFAULT       ; Untyped                                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                          ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                          ;
+; MAXIMIZE_SPEED         ; 5             ; Untyped                                                          ;
+; REGISTERED_AT_END      ; 0             ; Untyped                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5             ; Untyped                                                          ;
+; USE_CS_BUFFERS         ; 1             ; Untyped                                                          ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                          ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                               ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                          ;
+; USE_WYS                ; OFF           ; Untyped                                                          ;
+; STYLE                  ; FAST          ; Untyped                                                          ;
+; CBXI_PARAMETER         ; add_sub_6sg   ; Untyped                                                          ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                   ;
++------------------------+---------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1 ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name               ; Value         ; Type                                                                                                        ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTHS                   ; 1             ; Untyped                                                                                                     ;
+; DATAA_WIDTH                  ; 16            ; Untyped                                                                                                     ;
+; DATAB_WIDTH                  ; 16            ; Untyped                                                                                                     ;
+; DATAA_CLOCK                  ; NONE          ; Untyped                                                                                                     ;
+; DATAB_CLOCK                  ; NONE          ; Untyped                                                                                                     ;
+; SIGNA_CLOCK                  ; NONE          ; Untyped                                                                                                     ;
+; SIGNB_CLOCK                  ; NONE          ; Untyped                                                                                                     ;
+; OUTPUT_CLOCK                 ; NONE          ; Untyped                                                                                                     ;
+; DATAA_CLEAR                  ; NONE          ; Untyped                                                                                                     ;
+; DATAB_CLEAR                  ; NONE          ; Untyped                                                                                                     ;
+; SIGNA_CLEAR                  ; NONE          ; Untyped                                                                                                     ;
+; SIGNB_CLEAR                  ; NONE          ; Untyped                                                                                                     ;
+; OUTPUT_CLEAR                 ; NONE          ; Untyped                                                                                                     ;
+; ROUND_CLOCK                  ; none          ; Untyped                                                                                                     ;
+; ROUND_CLEAR                  ; none          ; Untyped                                                                                                     ;
+; SATURATE_CLOCK               ; none          ; Untyped                                                                                                     ;
+; SATURATE_CLEAR               ; none          ; Untyped                                                                                                     ;
+; BYPASS_MULTIPLIER            ; NO            ; Untyped                                                                                                     ;
+; DYNAMIC_SCAN_CHAIN_SUPPORTED ; NO            ; Untyped                                                                                                     ;
+; USING_ROUNDING               ; NO            ; Untyped                                                                                                     ;
+; USING_SATURATION             ; NO            ; Untyped                                                                                                     ;
+; EXTRA_OUTPUT_CLOCK           ; none          ; Untyped                                                                                                     ;
+; EXTRA_SIGNA_CLOCK            ; none          ; Untyped                                                                                                     ;
+; EXTRA_SIGNB_CLOCK            ; none          ; Untyped                                                                                                     ;
+; EXTRA_OUTPUT_CLEAR           ; none          ; Untyped                                                                                                     ;
+; EXTRA_SIGNA_CLEAR            ; none          ; Untyped                                                                                                     ;
+; EXTRA_SIGNB_CLEAR            ; none          ; Untyped                                                                                                     ;
+; MULT_PIPELINE                ; 0             ; Untyped                                                                                                     ;
+; MULT_CLOCK                   ; NONE          ; Untyped                                                                                                     ;
+; MULT_CLEAR                   ; NONE          ; Untyped                                                                                                     ;
+; MULT_REPRESENTATION_A        ; UNSIGNED      ; Untyped                                                                                                     ;
+; MULT_REPRESENTATION_B        ; UNSIGNED      ; Untyped                                                                                                     ;
+; MULT_INPUT_A_IS_CONSTANT     ; NO            ; Untyped                                                                                                     ;
+; MULT_INPUT_B_IS_CONSTANT     ; NO            ; Untyped                                                                                                     ;
+; MULT_INPUT_A_FIXED_VALUE     ; Bx            ; Untyped                                                                                                     ;
+; MULT_INPUT_B_FIXED_VALUE     ; Bx            ; Untyped                                                                                                     ;
+; MULT_MAXIMIZE_SPEED          ; 5             ; Untyped                                                                                                     ;
+; CBXI_PARAMETER               ; mac_mult_r2h1 ; Untyped                                                                                                     ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_out:mac_out2 ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name                ; Value        ; Type                                                                                                      ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------------+
+; OPERATION_MODE                ; OUTPUT_ONLY  ; Untyped                                                                                                   ;
+; DATAA_WIDTH                   ; 32           ; Untyped                                                                                                   ;
+; DATAB_WIDTH                   ; 0            ; Untyped                                                                                                   ;
+; DATAC_WIDTH                   ; 0            ; Untyped                                                                                                   ;
+; DATAD_WIDTH                   ; 0            ; Untyped                                                                                                   ;
+; ADDNSUB0_CLOCK                ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB1_CLOCK                ; NONE         ; Untyped                                                                                                   ;
+; ROUND0_CLOCK                  ; none         ; Untyped                                                                                                   ;
+; ROUND1_CLOCK                  ; none         ; Untyped                                                                                                   ;
+; SATURATE_CLOCK                ; none         ; Untyped                                                                                                   ;
+; MULTABSATURATE_CLOCK          ; none         ; Untyped                                                                                                   ;
+; MULTCDSATURATE_CLOCK          ; none         ; Untyped                                                                                                   ;
+; ZEROACC_CLOCK                 ; NONE         ; Untyped                                                                                                   ;
+; SIGNA_CLOCK                   ; NONE         ; Untyped                                                                                                   ;
+; SIGNB_CLOCK                   ; NONE         ; Untyped                                                                                                   ;
+; OUTPUT_CLOCK                  ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB0_CLEAR                ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB1_CLEAR                ; NONE         ; Untyped                                                                                                   ;
+; ROUND0_CLEAR                  ; none         ; Untyped                                                                                                   ;
+; ROUND1_CLEAR                  ; none         ; Untyped                                                                                                   ;
+; SATURATE_CLEAR                ; none         ; Untyped                                                                                                   ;
+; MULTABSATURATE_CLEAR          ; none         ; Untyped                                                                                                   ;
+; MULTCDSATURATE_CLEAR          ; none         ; Untyped                                                                                                   ;
+; ZEROACC_CLEAR                 ; NONE         ; Untyped                                                                                                   ;
+; SIGNA_CLEAR                   ; NONE         ; Untyped                                                                                                   ;
+; SIGNB_CLEAR                   ; NONE         ; Untyped                                                                                                   ;
+; OUTPUT_CLEAR                  ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB0_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB1_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                                   ;
+; ROUND0_PIPELINE_CLOCK         ; none         ; Untyped                                                                                                   ;
+; ROUND1_PIPELINE_CLOCK         ; none         ; Untyped                                                                                                   ;
+; SATURATE_PIPELINE_CLOCK       ; none         ; Untyped                                                                                                   ;
+; MULTABSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                                   ;
+; MULTCDSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                                   ;
+; ZEROACC_PIPELINE_CLOCK        ; NONE         ; Untyped                                                                                                   ;
+; SIGNA_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                                   ;
+; SIGNB_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB0_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                                   ;
+; ADDNSUB1_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                                   ;
+; ROUND0_PIPELINE_CLEAR         ; none         ; Untyped                                                                                                   ;
+; ROUND1_PIPELINE_CLEAR         ; none         ; Untyped                                                                                                   ;
+; SATURATE_PIPELINE_CLEAR       ; none         ; Untyped                                                                                                   ;
+; MULTABSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                                   ;
+; MULTCDSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                                   ;
+; ZEROACC_PIPELINE_CLEAR        ; NONE         ; Untyped                                                                                                   ;
+; SIGNA_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                                   ;
+; SIGNB_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                                   ;
+; MODE0_CLOCK                   ; none         ; Untyped                                                                                                   ;
+; MODE1_CLOCK                   ; none         ; Untyped                                                                                                   ;
+; ZEROACC1_CLOCK                ; none         ; Untyped                                                                                                   ;
+; SATURATE1_CLOCK               ; none         ; Untyped                                                                                                   ;
+; OUTPUT1_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT2_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT3_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT4_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT5_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT6_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT7_CLOCK                 ; none         ; Untyped                                                                                                   ;
+; MODE0_CLEAR                   ; none         ; Untyped                                                                                                   ;
+; MODE1_CLEAR                   ; none         ; Untyped                                                                                                   ;
+; ZEROACC1_CLEAR                ; none         ; Untyped                                                                                                   ;
+; SATURATE1_CLEAR               ; none         ; Untyped                                                                                                   ;
+; OUTPUT1_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT2_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT3_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT4_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT5_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT6_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; OUTPUT7_CLEAR                 ; none         ; Untyped                                                                                                   ;
+; MODE0_PIPELINE_CLOCK          ; none         ; Untyped                                                                                                   ;
+; MODE1_PIPELINE_CLOCK          ; none         ; Untyped                                                                                                   ;
+; ZEROACC1_PIPELINE_CLOCK       ; none         ; Untyped                                                                                                   ;
+; SATURATE1_PIPELINE_CLOCK      ; none         ; Untyped                                                                                                   ;
+; MODE0_PIPELINE_CLEAR          ; none         ; Untyped                                                                                                   ;
+; MODE1_PIPELINE_CLEAR          ; none         ; Untyped                                                                                                   ;
+; ZEROACC1_PIPELINE_CLEAR       ; none         ; Untyped                                                                                                   ;
+; SATURATE1_PIPELINE_CLEAR      ; none         ; Untyped                                                                                                   ;
+; FIRST_ADDER0_CLOCK            ; NONE         ; Untyped                                                                                                   ;
+; FIRST_ADDER1_CLOCK            ; NONE         ; Untyped                                                                                                   ;
+; FIRST_ADDER0_CLEAR            ; NONE         ; Untyped                                                                                                   ;
+; FIRST_ADDER1_CLEAR            ; NONE         ; Untyped                                                                                                   ;
+; DATAA_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                                   ;
+; DATAC_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                                   ;
+; USING_ROUNDING                ; NO           ; Untyped                                                                                                   ;
+; USING_SATURATION              ; NO           ; Untyped                                                                                                   ;
+; USING_MULT_SATURATION         ; NO           ; Untyped                                                                                                   ;
+; USING_LOADABLE_ACCUM          ; NO           ; Untyped                                                                                                   ;
+; LOADABLE_ACCUM_SUPPORTED      ; NO           ; Untyped                                                                                                   ;
+; USING_CHAINOUT                ; NO           ; Untyped                                                                                                   ;
+; CHAININ_WIDTH                 ; 0            ; Untyped                                                                                                   ;
+; CHAINOUT_PIPELINE_CLOCK       ; none         ; Untyped                                                                                                   ;
+; CHAINOUT_PIPELINE_CLEAR       ; none         ; Untyped                                                                                                   ;
+; CBXI_PARAMETER                ; mac_out_kv82 ; Untyped                                                                                                   ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                     ;
++---------------------------------------+------------------------------------------------------------+
+; Name                                  ; Value                                                      ;
++---------------------------------------+------------------------------------------------------------+
+; Number of entity instances            ; 1                                                          ;
+; Entity Instance                       ; datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                         ;
+;     -- LPM_WIDTHB                     ; 16                                                         ;
+;     -- LPM_WIDTHP                     ; 32                                                         ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                   ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                         ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                         ;
+;     -- USE_EAB                        ; OFF                                                        ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                       ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                         ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                         ;
++---------------------------------------+------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 52                          ;
+; cycloneiii_ff         ; 61                          ;
+;     CLR               ; 9                           ;
+;     ENA               ; 16                          ;
+;     ENA CLR           ; 16                          ;
+;     ENA CLR SLD       ; 20                          ;
+; cycloneiii_lcell_comb ; 425                         ;
+;     arith             ; 159                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 146                         ;
+;     normal            ; 266                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 75                          ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 150                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.90                       ;
+; Average LUT depth     ; 6.96                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Jan 10 08:01:01 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final -c final
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file final.bdf
+    Info (12023): Found entity 1: final
+Info (12127): Elaborating entity "final" for the top level hierarchy
+Warning (12125): Using design file controllerq.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: controllerQ File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 1
+Info (12128): Elaborating entity "controllerQ" for hierarchy "controllerQ:inst2"
+Warning (10235): Verilog HDL Always Construct warning at controllerq.v(11): variable "ci_adder" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 11
+Warning (10240): Verilog HDL Always Construct warning at controllerq.v(4): inferring latch(es) for variable "ci_adder", which holds its previous value in one or more paths through the always construct File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 4
+Info (10041): Inferred latch for "ci_adder" at controllerq.v(4) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 4
+Warning (12125): Using design file datapath.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: datapath
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:inst"
+Warning (12125): Using design file comparator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: comparator File: C:/Users/NanoCamp/Desktop/madar manteqi/6/comparator.v Line: 39
+Info (12128): Elaborating entity "comparator" for hierarchy "datapath:inst|comparator:inst2"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/comparator.v Line: 62
+Info (12130): Elaborated megafunction instantiation "datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/comparator.v Line: 62
+Info (12133): Instantiated megafunction "datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/comparator.v Line: 62
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_fug.tdf
+    Info (12023): Found entity 1: cmpr_fug File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cmpr_fug.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_fug" for hierarchy "datapath:inst|comparator:inst2|lpm_compare:LPM_COMPARE_component|cmpr_fug:auto_generated" File: c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Warning (12125): Using design file registerq.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: registerQ File: C:/Users/NanoCamp/Desktop/madar manteqi/6/registerq.v Line: 1
+Info (12128): Elaborating entity "registerQ" for hierarchy "datapath:inst|registerQ:treg"
+Warning (12125): Using design file multiplier.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplier File: C:/Users/NanoCamp/Desktop/madar manteqi/6/multiplier.v Line: 39
+Info (12128): Elaborating entity "multiplier" for hierarchy "datapath:inst|multiplier:inst4"
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/multiplier.v Line: 59
+Info (12130): Elaborated megafunction instantiation "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/multiplier.v Line: 59
+Info (12133): Instantiated megafunction "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/multiplier.v Line: 59
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "16"
+    Info (12134): Parameter "lpm_widthb" = "16"
+    Info (12134): Parameter "lpm_widthp" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ijn.tdf
+    Info (12023): Found entity 1: mult_ijn File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 28
+Info (12128): Elaborating entity "mult_ijn" for hierarchy "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated" File: c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
+Warning (12125): Using design file mulitplexer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mulitplexer File: C:/Users/NanoCamp/Desktop/madar manteqi/6/mulitplexer.v Line: 39
+Info (12128): Elaborating entity "Mulitplexer" for hierarchy "datapath:inst|Mulitplexer:inst"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/mulitplexer.v Line: 68
+Info (12130): Elaborated megafunction instantiation "datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/mulitplexer.v Line: 68
+Info (12133): Instantiated megafunction "datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/mulitplexer.v Line: 68
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "16"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_n0d.tdf
+    Info (12023): Found entity 1: mux_n0d File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mux_n0d.tdf Line: 22
+Info (12128): Elaborating entity "mux_n0d" for hierarchy "datapath:inst|Mulitplexer:inst|lpm_mux:LPM_MUX_component|mux_n0d:auto_generated" File: c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Warning (12125): Using design file romq.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: romQ File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 1
+Info (12128): Elaborating entity "romQ" for hierarchy "datapath:inst|romQ:inst1"
+Warning (10270): Verilog HDL Case Statement warning at romq.v(4): incomplete case statement has no default case item File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at romq.v(3): inferring latch(es) for variable "temp", which holds its previous value in one or more paths through the always construct File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[0]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[1]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[2]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[3]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[4]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[5]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[6]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[7]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[8]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[9]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[10]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[11]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[12]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[13]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[14]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Info (10041): Inferred latch for "temp[15]" at romq.v(3) File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+Warning (12125): Using design file counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter File: C:/Users/NanoCamp/Desktop/madar manteqi/6/counter.v Line: 39
+Info (12128): Elaborating entity "counter" for hierarchy "datapath:inst|counter:inst3"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/counter.v Line: 70
+Info (12130): Elaborated megafunction instantiation "datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/counter.v Line: 70
+Info (12133): Instantiated megafunction "datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/counter.v Line: 70
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_svalue" = "0"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_1lk.tdf
+    Info (12023): Found entity 1: cntr_1lk File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 25
+Info (12128): Elaborating entity "cntr_1lk" for hierarchy "datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated" File: c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+Warning (12125): Using design file addsub.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: addsub File: C:/Users/NanoCamp/Desktop/madar manteqi/6/addsub.v Line: 39
+Info (12128): Elaborating entity "addsub" for hierarchy "datapath:inst|addsub:inst9"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/addsub.v Line: 67
+Info (12130): Elaborated megafunction instantiation "datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/addsub.v Line: 67
+Info (12133): Instantiated megafunction "datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/addsub.v Line: 67
+    Info (12134): Parameter "lpm_direction" = "UNUSED"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_6sg.tdf
+    Info (12023): Found entity 1: add_sub_6sg File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/add_sub_6sg.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_6sg" for hierarchy "datapath:inst|addsub:inst9|lpm_add_sub:LPM_ADD_SUB_component|add_sub_6sg:auto_generated" File: c:/users/nanocamp/appdata/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (270001): Converted 1 DSP block slices
+    Info (270002): Used 1 DSP blocks before DSP block balancing
+        Info (270003): Used 1 DSP block slices in "Simple Multiplier (18-bit)" mode implemented in approximately 1 DSP blocks
+    Info (270013): Converted the following 1 DSP block slices to logic elements
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|mac_out2" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 44
+            Info (270004): DSP block output node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|mac_out2" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 44
+            Info (270005): DSP block multiplier node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|mac_mult1" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 35
+    Info (270002): Used 0 DSP blocks after DSP block balancing
+Info (12130): Elaborated megafunction instantiation "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 35
+Info (12133): Instantiated megafunction "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 35
+    Info (12134): Parameter "MULT_REPRESENTATION_A" = "UNSIGNED"
+    Info (12134): Parameter "MULT_REPRESENTATION_B" = "UNSIGNED"
+    Info (12134): Parameter "MULT_PIPELINE" = "0"
+    Info (12134): Parameter "MULT_CLOCK" = "NONE"
+    Info (12134): Parameter "MULT_CLEAR" = "NONE"
+    Info (12134): Parameter "MULT_INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MULT_INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "dataa_width" = "16"
+    Info (12134): Parameter "datab_width" = "16"
+    Info (12134): Parameter "output_width" = "32"
+    Info (12134): Parameter "dataa_clock" = "NONE"
+    Info (12134): Parameter "datab_clock" = "NONE"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "dataa_clear" = "NONE"
+    Info (12134): Parameter "datab_clear" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_mult_r2h1.tdf
+    Info (12023): Found entity 1: mac_mult_r2h1 File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mac_mult_r2h1.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_jul.tdf
+    Info (12023): Found entity 1: mult_jul File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_out:mac_out2" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 44
+Info (12133): Instantiated megafunction "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_out:mac_out2" with the following parameter: File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_ijn.tdf Line: 44
+    Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
+    Info (12134): Parameter "dataa_width" = "32"
+    Info (12134): Parameter "datab_width" = "0"
+    Info (12134): Parameter "datac_width" = "0"
+    Info (12134): Parameter "datad_width" = "0"
+    Info (12134): Parameter "output_width" = "32"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_clock" = "NONE"
+    Info (12134): Parameter "first_adder0_clock" = "NONE"
+    Info (12134): Parameter "first_adder1_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_clear" = "NONE"
+    Info (12134): Parameter "first_adder0_clear" = "NONE"
+    Info (12134): Parameter "first_adder1_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clear" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_kv82.tdf
+    Info (12023): Found entity 1: mac_out_kv82 File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mac_out_kv82.tdf Line: 22
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[17]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[16]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[17]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[16]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[15]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[14]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[13]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[12]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[16]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[15]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[14]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[13]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[12]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[11]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[10]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[9]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 48
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[15]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[14]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[13]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[12]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 46
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[11]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[10]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[17]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[16]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[17]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[16]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[15]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "datapath:inst|multiplier:inst4|lpm_mult:lpm_mult_component|mult_ijn:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[14]" File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/mult_jul.tdf Line: 54
+Info (13014): Ignored 396 buffer(s)
+    Info (13016): Ignored 16 CARRY_SUM buffer(s)
+    Info (13019): Ignored 380 SOFT buffer(s)
+Warning (13012): Latch controllerQ:inst2|ci_adder has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 1
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controllerQ:inst2|ps.mult1 File: C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerq.v Line: 2
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[0] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[1] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[2] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[3] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[3] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[4] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[5] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[8] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[3] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[7] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[3] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Warning (13012): Latch datapath:inst|romQ:inst1|temp[6] has unsafe behavior File: C:/Users/NanoCamp/Desktop/madar manteqi/6/romq.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:inst|counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[3] File: C:/Users/NanoCamp/Desktop/madar manteqi/6/db/cntr_1lk.tdf Line: 54
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 480 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 428 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Wed Jan 10 08:01:23 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:25
+
+

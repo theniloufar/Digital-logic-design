@@ -1,0 +1,20 @@
+|controllerQ
+start => Selector1.IN2
+start => Selector0.IN1
+start => ns.load.DATAB
+clk => ps~1.DATAIN
+rst => ps~3.DATAIN
+en => ns.sub_add.DATAB
+en => Selector0.IN2
+ready <= ready.DB_MAX_OUTPUT_PORT_TYPE
+loadx <= loadx.DB_MAX_OUTPUT_PORT_TYPE
+select <= select.DB_MAX_OUTPUT_PORT_TYPE
+enc <= select.DB_MAX_OUTPUT_PORT_TYPE
+counter_init <= counter_init.DB_MAX_OUTPUT_PORT_TYPE
+t_init <= counter_init.DB_MAX_OUTPUT_PORT_TYPE
+loadt <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+loadr <= loadr.DB_MAX_OUTPUT_PORT_TYPE
+r_init <= counter_init.DB_MAX_OUTPUT_PORT_TYPE
+ci_adder <= ci_adder$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

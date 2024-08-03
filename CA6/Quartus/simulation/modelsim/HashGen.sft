@@ -1,0 +1,5 @@
+set tool_name "ModelSim (SystemVerilog)"
+set corner_file_list {
+	{{"Slow Model"} {HashGen.svo HashGen_v.sdo}}
+	{{"Fast Model"} {HashGen_fast.svo HashGen_v_fast.sdo}}
+}

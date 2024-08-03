@@ -1,0 +1,16 @@
+ `timescale 1ns/1ns
+module TB2();
+	reg DD = 1'b0, clk = 1'b0;
+	wire Q1, Q1not;
+	DFF dff(DD, clk, Q1, Q1not);
+	always #70 clk <= ~clk;
+	initial begin
+		#100 DD = 1;
+		#100 DD = 0;
+		#100 DD = 1;
+		#100 DD = 0;
+		#100 DD = 1;
+		#100 DD = 0;
+		#100 $stop;
+	end
+endmodule

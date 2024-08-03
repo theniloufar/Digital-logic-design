@@ -1,0 +1,30 @@
+{C:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module aTB
+
+Top level modules:
+	aTB
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bTB
+
+Top level modules:
+	bTB
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module detector
+
+Top level modules:
+	detector
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bQ
+-- Compiling module hard_block
+
+Top level modules:
+	bQ
+
+} {} {}}

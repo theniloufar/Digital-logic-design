@@ -1,0 +1,15 @@
+ `timescale 1ns/1ns
+module testBenchG();
+	reg aa, bb, cc;
+	wire yy0, yy1;
+	myGcircuit oc(aa, bb, cc, yy1, yy0);
+	initial begin
+		#100 aa = 1;
+		#100 bb = 1;
+		#100 cc = 1;
+		#100 aa = 0;
+		#100 bb = 0;
+		#100 cc = 0;
+		#100 $stop;
+	end
+endmodule

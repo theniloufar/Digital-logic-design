@@ -1,0 +1,8 @@
+`timescale 1ns/1ns
+module SRlatch_transistor(input S, R, a, output Q, Qnot);
+	wire x, y, z;
+	supply0 gnd;
+	supply1 vdd;
+	pmos #6 T1(Qnot,vdd,R), T2(Qnot,vdd,Q), T3(Q,vdd,z), T4(Q,vdd,a), T5(Q,vdd,S);
+	nmos #4 T6(x,Qnot,R), T7(gnd,x,Q), T8(z,Q,Qnot), T9(y,z,S), T10(gnd,y,a);
+endmodule

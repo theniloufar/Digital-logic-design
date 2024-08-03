@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Wed Jan 10 07:21:33 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : controllerQ
+Top-level Entity Name : controllerQ
+Family : Cyclone IV GX
+Total logic elements : 14
+    Total combinational functions : 10
+    Dedicated logic registers : 9
+Total registers : 9
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

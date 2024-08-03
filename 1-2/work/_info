@@ -1,0 +1,342 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/NanoCamp/Desktop
+vassign6
+Z0 !s110 1700039306
+!i10b 1
+!s100 CQBBmC1EfP6XAGXOWmieJ2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IT=^hgiIg1DWc0f8IKdaaX2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/NanoCamp/Desktop/madar manteqi
+w1699721081
+8C:/Users/NanoCamp/Desktop/madar manteqi/6.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/6.v
+!i122 532
+Z4 L0 2 7
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1700039306.000000
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/6.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vassign_statement
+Z9 !s110 1700039305
+!i10b 1
+!s100 cX>@4bS;047EjQ_WnD3;W0
+R1
+I<IfUNOa;0V<LlT@a_CDIn0
+R2
+R3
+w1699706477
+8C:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v
+!i122 528
+L0 2 4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1700039305.000000
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v|
+!i113 1
+R7
+R8
+vmyGcircuit
+Z11 !s110 1700039304
+!i10b 1
+!s100 RHF^G>4P9`CBkFG^T_D>i2
+R1
+I3Dkj1HeDb;XzG7U4h>cQI2
+R2
+R3
+w1699700643
+8C:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v
+!i122 526
+R4
+R5
+r1
+!s85 0
+31
+Z12 !s108 1700039304.000000
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v|
+!i113 1
+R7
+R8
+nmy@gcircuit
+vmyTcircuit
+R11
+!i10b 1
+!s100 oen^KMFz3zMn9I1f:N<T:1
+R1
+I26?hdRCT5FQzHDa1[eCAB1
+R2
+R3
+w1699697873
+8C:/Users/NanoCamp/Desktop/madar manteqi/circuit.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/circuit.v
+!i122 524
+L0 2 9
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/circuit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/circuit.v|
+!i113 1
+R7
+R8
+nmy@tcircuit
+vOC
+!s110 1699721241
+!i10b 1
+!s100 8NA2=em1zNR4ISXXUFS;A1
+R1
+IoHDL]N3<ACEW0>dogbnK53
+R2
+R3
+w1699720368
+Z13 8C:/Users/NanoCamp/Desktop/madar manteqi/5.v
+Z14 FC:/Users/NanoCamp/Desktop/madar manteqi/5.v
+!i122 331
+R4
+R5
+r1
+!s85 0
+31
+!s108 1699721240.000000
+Z15 !s107 C:/Users/NanoCamp/Desktop/madar manteqi/5.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5.v|
+!i113 1
+R7
+R8
+n@o@c
+voc15to4input
+R0
+!i10b 1
+!s100 zhg<DjQ_PdfOCHSN3kAcP2
+R1
+I[5SX5HDnWE6lLa3b:`KJS2
+R2
+R3
+w1699726195
+Z17 8C:/Users/NanoCamp/Desktop/madar manteqi/7.v
+Z18 FC:/Users/NanoCamp/Desktop/madar manteqi/7.v
+!i122 534
+Z19 L0 2 8
+R5
+r1
+!s85 0
+31
+R6
+Z20 !s107 C:/Users/NanoCamp/Desktop/madar manteqi/7.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/7.v|
+!i113 1
+R7
+R8
+voc7to3input
+R9
+!i10b 1
+!s100 2>[0leT5AfgMK8ALz=jhP1
+R1
+I5^EkC8`Z=23V0TR3`2PH;3
+R2
+R3
+w1699723195
+R13
+R14
+!i122 530
+R4
+R5
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 1
+R7
+R8
+voc7to4input
+!s110 1699724234
+!i10b 1
+!s100 Fm5VZMcANnca5cSPiHoiE1
+R1
+IMUU:KoN5Xzc@S2b`QMTDU3
+R2
+R3
+w1699724226
+R17
+R18
+!i122 402
+R19
+R5
+r1
+!s85 0
+31
+!s108 1699724234.000000
+R20
+R21
+!i113 1
+R7
+R8
+vtestBench
+R11
+!i10b 1
+!s100 `OfIe;EB_?Kej[MkKeG933
+R1
+I`3E;4DH=>0P:`0F;bie862
+R2
+R3
+w1699727608
+8C:/Users/NanoCamp/Desktop/madar manteqi/testBench.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/testBench.v
+!i122 525
+L0 2 17
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/testBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/testBench.v|
+!i113 1
+R7
+R8
+ntest@bench
+vtestBench5
+R0
+!i10b 1
+!s100 blifFD]K@i6]C`C=l05]n1
+R1
+IPAJJ2>UO6lo`8McVk]D400
+R2
+R3
+w1699727441
+8C:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v
+!i122 531
+L0 2 25
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v|
+!i113 1
+R7
+R8
+ntest@bench5
+vtestBench6
+R0
+!i10b 1
+!s100 J2R`Zam>F:LjD;g8=7VkO2
+R1
+ILeA4b^VL[WBja6<@UFMl40
+R2
+R3
+w1699727424
+8C:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v
+!i122 533
+L0 2 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v|
+!i113 1
+R7
+R8
+ntest@bench6
+vtestBench7
+!s110 1700039307
+!i10b 1
+!s100 Faa1gegLfXbR1zhnTc?ji2
+R1
+IzngkZFa2azXn_cmD>iCf;3
+R2
+R3
+w1699727592
+8C:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v
+!i122 535
+L0 2 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v|
+!i113 1
+R7
+R8
+ntest@bench7
+vtestBenchCompare
+R9
+!i10b 1
+!s100 [K;=bOQ?9Z2_j]Rn9AdCI3
+R1
+Iz94gPa`o8FlV1NglK5EY`2
+R2
+R3
+w1699727353
+8C:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v
+!i122 529
+L0 2 19
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v|
+!i113 1
+R7
+R8
+ntest@bench@compare
+vtestBenchG
+R9
+!i10b 1
+!s100 e5nRVIW7KbZ;=6=gk;Eo_3
+R1
+IGPnXX^RK=^VF_;Fzm2@5R3
+R2
+R3
+w1699727520
+8C:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v
+!i122 527
+L0 2 16
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v|
+!i113 1
+R7
+R8
+ntest@bench@g

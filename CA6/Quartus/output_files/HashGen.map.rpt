@@ -1,0 +1,609 @@
+Analysis & Synthesis report for HashGen
+Thu Jun 27 09:25:01 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Top|Hash_Gen:HG|CU:Controller|ps
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "mem:Memory"
+ 14. Port Connectivity Checks: "Hash_Gen:HG|DP:dataPath|LUT_S:L2"
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Jun 27 09:25:01 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; HashGen                                         ;
+; Top-level Entity Name              ; Top                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 1,033                                           ;
+;     Total combinational functions  ; 1,033                                           ;
+;     Dedicated logic registers      ; 150                                             ;
+; Total registers                    ; 150                                             ;
+; Total pins                         ; 36                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Top                ; HashGen            ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------+---------+
+; ../Pro/Adder.sv                  ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Adder.sv    ;         ;
+; ../Pro/CU.sv                     ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/CU.sv       ;         ;
+; ../Pro/DP.sv                     ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/DP.sv       ;         ;
+; ../Pro/F_Gen.sv                  ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/F_Gen.sv    ;         ;
+; ../Pro/Hash_Gen.sv               ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Hash_Gen.sv ;         ;
+; ../Pro/LUT.sv                    ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/LUT.sv      ;         ;
+; ../Pro/LUT2.sv                   ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/LUT2.sv     ;         ;
+; ../Pro/Memory.sv                 ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Memory.sv   ;         ;
+; ../Pro/MUX.sv                    ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/MUX.sv      ;         ;
+; ../Pro/Register.sv               ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Register.sv ;         ;
+; ../Pro/Shifter.sv                ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Shifter.sv  ;         ;
+; ../Pro/Top.sv                    ; yes             ; User SystemVerilog HDL File  ; //Mac/Home/Desktop/Pro/Top.sv      ;         ;
+; //mac/home/desktop/pro/data.txt  ; yes             ; Auto-Found File              ; //mac/home/desktop/pro/data.txt    ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 1,033 ;
+;                                             ;       ;
+; Total combinational functions               ; 1033  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 558   ;
+;     -- 3 input functions                    ; 415   ;
+;     -- <=2 input functions                  ; 60    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 874   ;
+;     -- arithmetic mode                      ; 159   ;
+;                                             ;       ;
+; Total registers                             ; 150   ;
+;     -- Dedicated logic registers            ; 150   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 36    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 150   ;
+; Total fan-out                               ; 4128  ;
+; Average fan-out                             ; 3.39  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; |Top                       ; 1033 (2)          ; 150 (0)      ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |Top                                        ; work         ;
+;    |Hash_Gen:HG|           ; 1029 (0)          ; 149 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG                            ; work         ;
+;       |CU:Controller|      ; 34 (34)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|CU:Controller              ; work         ;
+;       |DP:dataPath|        ; 995 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath                ; work         ;
+;          |Adder:Add1|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Adder:Add1     ; work         ;
+;          |Adder:Add2|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Adder:Add2     ; work         ;
+;          |Adder:Add3|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Adder:Add3     ; work         ;
+;          |Adder:Add5|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Adder:Add5     ; work         ;
+;          |F_Gen:F1|        ; 96 (96)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|F_Gen:F1       ; work         ;
+;          |LUT_K:L1|        ; 223 (223)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|LUT_K:L1       ; work         ;
+;          |LUT_S:L2|        ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|LUT_S:L2       ; work         ;
+;          |Register:Reg_A|  ; 34 (34)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Register:Reg_A ; work         ;
+;          |Register:Reg_B|  ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Register:Reg_B ; work         ;
+;          |Register:Reg_C|  ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Register:Reg_C ; work         ;
+;          |Register:Reg_D|  ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Register:Reg_D ; work         ;
+;          |Shifter:Shift1|  ; 343 (343)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1 ; work         ;
+;          |mux4:MUX1|       ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|mux4:MUX1      ; work         ;
+;          |mux4:MUX2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Hash_Gen:HG|DP:dataPath|mux4:MUX2      ; work         ;
+;    |mem:Memory|            ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|mem:Memory                             ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Top|Hash_Gen:HG|CU:Controller|ps                                                                                                             ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Name    ; ps.1110 ; ps.1101 ; ps.1100 ; ps.1011 ; ps.1010 ; ps.1001 ; ps.1000 ; ps.0111 ; ps.0110 ; ps.0101 ; ps.0100 ; ps.0011 ; ps.0010 ; ps.0001 ; ps.0000 ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; ps.0000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; ps.0001 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ;
+; ps.0010 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 1       ;
+; ps.0011 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 1       ;
+; ps.0100 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 1       ;
+; ps.0101 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.0110 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.0111 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1001 ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1010 ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1011 ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1100 ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1101 ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; ps.1110 ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                   ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[0]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[1]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[2]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[1]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[0]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[2]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[3]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[4]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[5]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[6]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[7]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[8]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[9]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[10]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[11]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[12]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[13]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[14]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[15]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[3]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[16]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[17]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[18]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[19]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[20]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[21]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[22]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[23]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[24]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[25]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[26]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[27]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[28]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[29]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[30]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[31]            ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[4]             ; Hash_Gen:HG|DP:dataPath|LUT_K:L1|Mux32 ; yes                    ;
+; Number of user-specified and inferred latches = 37  ;                                        ;                        ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                  ;
++----------------------------------------+--------------------------------------------+
+; Register name                          ; Reason for Removal                         ;
++----------------------------------------+--------------------------------------------+
+; Hash_Gen:HG|CU:Controller|j[0]         ; Merged with Hash_Gen:HG|CU:Controller|i[0] ;
+; Hash_Gen:HG|CU:Controller|j[1]         ; Merged with Hash_Gen:HG|CU:Controller|i[1] ;
+; Hash_Gen:HG|CU:Controller|j[2]         ; Merged with Hash_Gen:HG|CU:Controller|i[2] ;
+; Hash_Gen:HG|CU:Controller|i[3]         ; Merged with Hash_Gen:HG|CU:Controller|j[3] ;
+; mem:Memory|out[8..15,24..31]           ; Stuck at GND due to stuck port data_in     ;
+; mem:Memory|out[0..7,16..22]            ; Merged with mem:Memory|out[23]             ;
+; Hash_Gen:HG|CU:Controller|ps~2         ; Lost fanout                                ;
+; Hash_Gen:HG|CU:Controller|ps~3         ; Lost fanout                                ;
+; Hash_Gen:HG|CU:Controller|ps~4         ; Lost fanout                                ;
+; Hash_Gen:HG|CU:Controller|ps~5         ; Lost fanout                                ;
+; Total Number of Removed Registers = 39 ;                                            ;
++----------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 150   ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 134   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Top|Hash_Gen:HG|CU:Controller|i[0]                     ;
+; 4:1                ; 128 bits  ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; Yes        ; |Top|Hash_Gen:HG|DP:dataPath|Register:Reg_A|out[20]     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|mux4:MUX1|Mux11            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|CU:Controller|ps                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftLeft0  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftRight0 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftLeft0  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftRight0 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftLeft0  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftRight0 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftLeft0  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftRight0 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top|Hash_Gen:HG|DP:dataPath|Shifter:Shift1|ShiftRight0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mem:Memory"                                                                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; addr ; Input ; Warning  ; Input port expression (4 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "addr[4..4]" will be connected to GND. ;
+; in   ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Hash_Gen:HG|DP:dataPath|LUT_S:L2"                                                                                        ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (5 bits) it drives; bit(s) "out[31..5]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 27 09:24:51 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HashGen -c HashGen
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/adder.sv
+    Info (12023): Found entity 1: Adder
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/cu.sv
+    Info (12023): Found entity 1: CU
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/dp.sv
+    Info (12023): Found entity 1: DP
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/f_gen.sv
+    Info (12023): Found entity 1: F_Gen
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/hash_gen.sv
+    Info (12023): Found entity 1: Hash_Gen
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/lut.sv
+    Info (12023): Found entity 1: LUT_K
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/lut2.sv
+    Info (12023): Found entity 1: LUT_S
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/memory.sv
+    Info (12023): Found entity 1: mem
+Info (12021): Found 2 design units, including 2 entities, in source file //mac/home/desktop/pro/mux.sv
+    Info (12023): Found entity 1: mux2
+    Info (12023): Found entity 2: mux4
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/register.sv
+    Info (12023): Found entity 1: Register
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/shifter.sv
+    Info (12023): Found entity 1: Shifter
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/desktop/pro/top.sv
+    Info (12023): Found entity 1: Top
+Info (12127): Elaborating entity "Top" for the top level hierarchy
+Info (12128): Elaborating entity "Hash_Gen" for hierarchy "Hash_Gen:HG"
+Info (12128): Elaborating entity "DP" for hierarchy "Hash_Gen:HG|DP:dataPath"
+Info (12128): Elaborating entity "mux2" for hierarchy "Hash_Gen:HG|DP:dataPath|mux2:M1"
+Info (12128): Elaborating entity "Register" for hierarchy "Hash_Gen:HG|DP:dataPath|Register:Reg_A"
+Info (12128): Elaborating entity "Adder" for hierarchy "Hash_Gen:HG|DP:dataPath|Adder:Add1"
+Info (12128): Elaborating entity "Shifter" for hierarchy "Hash_Gen:HG|DP:dataPath|Shifter:Shift1"
+Info (12128): Elaborating entity "F_Gen" for hierarchy "Hash_Gen:HG|DP:dataPath|F_Gen:F1"
+Info (12128): Elaborating entity "mux4" for hierarchy "Hash_Gen:HG|DP:dataPath|mux4:MUX1"
+Info (12128): Elaborating entity "LUT_K" for hierarchy "Hash_Gen:HG|DP:dataPath|LUT_K:L1"
+Warning (10272): Verilog HDL Case Statement warning at LUT.sv(30): case item expression covers a value already covered by a previous case item
+Warning (10270): Verilog HDL Case Statement warning at LUT.sv(5): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at LUT.sv(4): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "out[0]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[1]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[2]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[3]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[4]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[5]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[6]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[7]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[8]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[9]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[10]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[11]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[12]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[13]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[14]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[15]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[16]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[17]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[18]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[19]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[20]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[21]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[22]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[23]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[24]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[25]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[26]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[27]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[28]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[29]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[30]" at LUT.sv(4)
+Info (10041): Inferred latch for "out[31]" at LUT.sv(4)
+Info (12128): Elaborating entity "LUT_S" for hierarchy "Hash_Gen:HG|DP:dataPath|LUT_S:L2"
+Warning (10272): Verilog HDL Case Statement warning at LUT2.sv(30): case item expression covers a value already covered by a previous case item
+Warning (10270): Verilog HDL Case Statement warning at LUT2.sv(5): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at LUT2.sv(4): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "out[0]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[1]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[2]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[3]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[4]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[5]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[6]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[7]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[8]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[9]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[10]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[11]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[12]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[13]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[14]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[15]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[16]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[17]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[18]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[19]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[20]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[21]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[22]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[23]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[24]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[25]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[26]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[27]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[28]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[29]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[30]" at LUT2.sv(4)
+Info (10041): Inferred latch for "out[31]" at LUT2.sv(4)
+Info (12128): Elaborating entity "CU" for hierarchy "Hash_Gen:HG|CU:Controller"
+Warning (10230): Verilog HDL assignment warning at CU.sv(31): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at CU.sv(40): truncated value with size 32 to match size of target (6)
+Warning (10270): Verilog HDL Case Statement warning at CU.sv(76): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at CU.sv(76): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "mem" for hierarchy "mem:Memory"
+Warning (10030): Net "mem.data_a" at Memory.sv(7) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "mem.waddr_a" at Memory.sv(7) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "mem.we_a" at Memory.sv(7) has no driver or initial value, using a default initial value '0'
+Critical Warning (127005): Memory depth (128) in the design file differs from memory depth (101) in the Memory Initialization File "//Mac/Home/Desktop/Q/db/HashGen.ram0_mem_1c3ed.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "//Mac/Home/Desktop/Q/db/HashGen.ram0_mem_1c3ed.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[2]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[0]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[0]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[0]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[2]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[2]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[8] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[0]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[9] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[2]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[10] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[11] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[12] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[13] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[14] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[15] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[16] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[0]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[17] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[18] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[19] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[20] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[21] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[22] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[23] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[24] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[2]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[25] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[26] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[27] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[4]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[28] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[29] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[5]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[30] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_K:L1|out[31] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|j[3]
+Warning (13012): Latch Hash_Gen:HG|DP:dataPath|LUT_S:L2|out[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Hash_Gen:HG|CU:Controller|i[1]
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1069 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 1033 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4598 megabytes
+    Info: Processing ended: Thu Jun 27 09:25:01 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
+
+

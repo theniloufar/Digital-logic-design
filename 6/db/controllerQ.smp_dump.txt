@@ -1,0 +1,12 @@
+
+State Machine - |controllerQ|ps
+Name ps.compare ps.mult4 ps.mult3 ps.mult2 ps.mult1 ps.load ps.init ps.idle ps.sub_add 
+ps.idle 0 0 0 0 0 0 0 0 0 
+ps.init 0 0 0 0 0 0 1 1 0 
+ps.load 0 0 0 0 0 1 0 1 0 
+ps.mult1 0 0 0 0 1 0 0 1 0 
+ps.mult2 0 0 0 1 0 0 0 1 0 
+ps.mult3 0 0 1 0 0 0 0 1 0 
+ps.mult4 0 1 0 0 0 0 0 1 0 
+ps.compare 1 0 0 0 0 0 0 1 0 
+ps.sub_add 0 0 0 0 0 0 0 1 1 

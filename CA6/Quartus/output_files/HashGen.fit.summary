@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jun 27 09:25:13 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : HashGen
+Top-level Entity Name : Top
+Family : Cyclone II
+Device : EP2C5T144C6
+Timing Models : Final
+Total logic elements : 1,033 / 4,608 ( 22 % )
+    Total combinational functions : 1,033 / 4,608 ( 22 % )
+    Dedicated logic registers : 150 / 4,608 ( 3 % )
+Total registers : 150
+Total pins : 36 / 89 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

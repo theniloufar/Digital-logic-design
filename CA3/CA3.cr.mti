@@ -1,0 +1,85 @@
+C:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbstat
+
+Top level modules:
+	tbstat
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module var_calculator
+
+Top level modules:
+	var_calculator
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module comparator_1bit
+
+Top level modules:
+	comparator_1bit
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbmean
+
+Top level modules:
+	tbmean
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbmin
+
+Top level modules:
+	tbmin
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mean_calculator
+
+Top level modules:
+	mean_calculator
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbmax
+
+Top level modules:
+	tbmax
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module stat_calculator
+
+Top level modules:
+	stat_calculator
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module min_block
+
+Top level modules:
+	min_block
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbvar
+
+Top level modules:
+	tbvar
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module max_block
+
+Top level modules:
+	max_block
+
+} {} {}}

@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "loadx",
+					"strict" : false
+				},
+				{
+					"name" : "select",
+					"strict" : false
+				},
+				{
+					"name" : "enc",
+					"strict" : false
+				},
+				{
+					"name" : "counter_init",
+					"strict" : false
+				},
+				{
+					"name" : "t_init",
+					"strict" : false
+				},
+				{
+					"name" : "loadt",
+					"strict" : false
+				},
+				{
+					"name" : "loadr",
+					"strict" : false
+				},
+				{
+					"name" : "r_init",
+					"strict" : false
+				},
+				{
+					"name" : "ci_adder",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "en",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

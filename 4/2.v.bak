@@ -1,0 +1,7 @@
+ `timescale 1ns/1ns
+module DFF(input D, clk, output Q, Qnot);
+	wire c, cnot, d, dnot;
+	SRlatch32 S1(dnot, clk, 1'b1, c, cnot);
+	SRlatch32 S2(cnot, D, clk, d, dnot);
+	SRlatch32 S3(cnot, d, 1'b1, Q, Qnot);
+endmodule

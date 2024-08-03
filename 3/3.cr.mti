@@ -1,0 +1,67 @@
+C:/Users/NanoCamp/Desktop/3/mycells.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/mycells.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NOT
+-- Compiling module NAND
+-- Compiling module NOR
+-- Compiling module DFF
+-- Compiling module DFF_PP0
+-- Compiling module DFF_PP1
+
+Top level modules:
+	NOT
+	NAND
+	NOR
+	DFF
+	DFF_PP0
+	DFF_PP1
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module behavioral_structural_tb
+
+Top level modules:
+	behavioral_structural_tb
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/structural_ALU.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/structural_ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module structural_ALU
+
+Top level modules:
+	structural_ALU
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/behavioral_ALU.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/behavioral_ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module behavioral_ALU
+
+Top level modules:
+	behavioral_ALU
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module structural_ALU_synth
+
+Top level modules:
+	structural_ALU_synth
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module structural_ALU_tb
+
+Top level modules:
+	structural_ALU_tb
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module behavioral_ALU
+
+Top level modules:
+	behavioral_ALU
+
+} {} {}} C:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module behavioral_ALU_tb
+
+Top level modules:
+	behavioral_ALU_tb
+
+} {} {}}

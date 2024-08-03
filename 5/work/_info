@@ -1,0 +1,177 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/NanoCamp/Desktop/madar manteqi/4
+vaQ
+Z0 !s110 1704271142
+!i10b 1
+!s100 kbC89Ac>nP=WYXC1lL3eB0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ic]QcJm1LZAglJ;4=A;80<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/NanoCamp/Desktop/madar manteqi/5
+w1704254931
+8C:/Users/NanoCamp/Desktop/madar manteqi/5/simulation/modelsim/aQ.vo
+FC:/Users/NanoCamp/Desktop/madar manteqi/5/simulation/modelsim/aQ.vo
+!i122 65
+L0 31 383
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1704271142.000000
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/simulation/modelsim/aQ.vo|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5/simulation/modelsim/aQ.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+na@q
+vaTB
+Z8 !s110 1704271141
+!i10b 1
+!s100 3Nn>^o[<6iW`ZO;^9b^@n1
+R1
+I3LDF0kM7JO_VkjUoO4`<61
+R2
+R3
+w1704109091
+Z9 8C:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v
+Z10 FC:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v
+!i122 64
+Z11 L0 2 14
+R4
+r1
+!s85 0
+31
+Z12 !s108 1704271141.000000
+Z13 !s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5/a1TB.v|
+!i113 1
+R6
+R7
+na@t@b
+vbQ
+R0
+!i10b 1
+!s100 :FzOPgGa]I^NXCO==A<T=2
+R1
+IiTKXRfa[L^Zk@Jdz[48<53
+R2
+R3
+Z15 w1704183576
+Z16 8C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo
+Z17 FC:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo
+!i122 67
+L0 31 807
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo|
+!i113 1
+R6
+R7
+nb@q
+vbTB
+R0
+!i10b 1
+!s100 jZ52Nl^^jXMfbd3iS0:712
+R1
+I7i8Tdk:z5>d9TanYh;O8A2
+R2
+R3
+w1704184009
+8C:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v
+!i122 66
+L0 2 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5/b1TB.v|
+!i113 1
+R6
+R7
+nb@t@b
+vdetector
+R8
+!i10b 1
+!s100 hQShn6@zDX_]3ml?Ya2:k2
+R1
+IdO<Se8Go8Y<8NGW6[LC7L0
+R2
+R3
+w1704092336
+8C:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v
+FC:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v
+!i122 63
+L0 2 25
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/madar manteqi/5/a1.v|
+!i113 1
+R6
+R7
+vdetectorTB
+!s110 1704099960
+!i10b 1
+!s100 I`CX5=;bcikV47ejIm@R60
+R1
+IegAlkH4?80lQ>M@T?YAGh3
+R2
+R3
+w1704097318
+R9
+R10
+!i122 23
+R11
+R4
+r1
+!s85 0
+31
+!s108 1704099960.000000
+R13
+R14
+!i113 1
+R6
+R7
+ndetector@t@b
+vhard_block
+!s110 1704271143
+!i10b 1
+!s100 CABC<]LLC^Ahh=;;3cQ3S2
+R1
+Ik1TPZ;B_fMcPNh^fOHch62
+R2
+R3
+R15
+R16
+R17
+!i122 67
+L0 839 34
+R4
+r1
+!s85 0
+31
+R5
+Z19 !s107 C:/Users/NanoCamp/Desktop/madar manteqi/5/bQ.vo|
+R18
+!i113 1
+R6
+R7

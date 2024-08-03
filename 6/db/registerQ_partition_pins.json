@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "regout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "regout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "init",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "regin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[12]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[13]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[14]",
+					"strict" : false
+				},
+				{
+					"name" : "regin[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,269 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/NanoCamp/Desktop/DLD/CA3
+vcounter3
+Z0 !s110 1717148675
+!i10b 1
+!s100 z>M;Sb>SA]R`S0<9Z7oZ50
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ig5h3n63YjNWQX>=0j5a;g0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/NanoCamp/Desktop/DLD/CA4
+w1717073849
+8C:/Users/NanoCamp/Desktop/DLD/CA4/counter3.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/counter3.v
+!i122 217
+Z4 L0 1 14
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1717148675.000000
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/counter3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/counter3.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vcounter4_0
+Z9 !s110 1717148674
+!i10b 1
+!s100 WLieERdg;WF;V8>I9HR<42
+R1
+Ii;Vl:febXLb3U:CE]8[Ba2
+R2
+R3
+w1717069787
+8C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_0.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/counter4_0.v
+!i122 211
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1717148674.000000
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_0.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_0.v|
+!i113 1
+R7
+R8
+vcounter4_1
+R9
+!i10b 1
+!s100 iiXozn;I5Y2W4k:fCRc7V1
+R1
+Ie:XPm`hQ1gd5H>`ibz:^J1
+R2
+R3
+w1717069778
+8C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_1.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/counter4_1.v
+!i122 210
+L0 1 16
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/counter4_1.v|
+!i113 1
+R7
+R8
+vMUX
+!s110 1717055777
+!i10b 1
+!s100 ZGWBz]D54fGDCOVm[lLcg0
+R1
+IkJ9KTVdPP1Q?OJKj5B@0T3
+R2
+R3
+w1717003178
+Z11 8C:/Users/NanoCamp/Desktop/DLD/CA4/MUX.v
+Z12 FC:/Users/NanoCamp/Desktop/DLD/CA4/MUX.v
+!i122 36
+Z13 L0 1 5
+R5
+r1
+!s85 0
+31
+!s108 1717055777.000000
+Z14 !s107 C:/Users/NanoCamp/Desktop/DLD/CA4/MUX.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/MUX.v|
+!i113 1
+R7
+R8
+n@m@u@x
+vMUX1
+R9
+!i10b 1
+!s100 T=NT4>]I5SLhUlUVljBj32
+R1
+I>beII`b0n]ba:AzSa[eWT2
+R2
+R3
+w1717069699
+R11
+R12
+!i122 214
+R13
+R5
+r1
+!s85 0
+31
+R10
+R14
+R15
+!i113 1
+R7
+R8
+n@m@u@x1
+vMUX2
+R0
+!i10b 1
+!s100 `:m8a`X5^^@:9m@_ge9LX3
+R1
+I0F<I8LJLgUO2eJ3RJ7hjk0
+R2
+R3
+w1717071565
+8C:/Users/NanoCamp/Desktop/DLD/CA4/MUX2.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/MUX2.v
+!i122 218
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/MUX2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/MUX2.v|
+!i113 1
+R7
+R8
+n@m@u@x2
+vserial_receiver
+R0
+!i10b 1
+!s100 3B?HVTGi?mV>igPzPP`Ka3
+R1
+I_TSOXzoP[MXdf[nA_`TYh0
+R2
+R3
+w1717073169
+8C:/Users/NanoCamp/Desktop/DLD/CA4/serial_receiver.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/serial_receiver.v
+!i122 215
+L0 1 13
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/serial_receiver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/serial_receiver.v|
+!i113 1
+R7
+R8
+vshiftreg_l
+R9
+!i10b 1
+!s100 Lb2EWbI26g<LTnJY59aN60
+R1
+IBFl7jbYJDMndX3X`j@=452
+R2
+R3
+w1717003216
+8C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_l.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_l.v
+!i122 213
+Z16 L0 1 10
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_l.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_l.v|
+!i113 1
+R7
+R8
+vshiftreg_r
+R9
+!i10b 1
+!s100 4XV02d<NFbXD`QOKXMC1Y2
+R1
+ITdXQmb<Eb3P3B:BJ08A^j2
+R2
+R3
+w1717003249
+8C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_r.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_r.v
+!i122 212
+R16
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_r.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/shiftreg_r.v|
+!i113 1
+R7
+R8
+vTB
+R0
+!i10b 1
+!s100 20^9Ca^n18KDXl`Z@cgI70
+R1
+IJAlH^zPiJOHXoR<iFfcBA2
+R2
+R3
+w1717148537
+8C:/Users/NanoCamp/Desktop/DLD/CA4/TB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/TB.v
+!i122 216
+L0 2 46
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/TB.v|
+!i113 1
+R7
+R8
+n@t@b
+vTB2
+R0
+!i10b 1
+!s100 Y@;RaSH4g3z6k0[`^e<c;2
+R1
+Ibhbbj:IM=<Ze25jETHVIa3
+R2
+R3
+w1717148668
+8C:/Users/NanoCamp/Desktop/DLD/CA4/TB2.v
+FC:/Users/NanoCamp/Desktop/DLD/CA4/TB2.v
+!i122 219
+L0 2 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA4/TB2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA4/TB2.v|
+!i113 1
+R7
+R8
+n@t@b2

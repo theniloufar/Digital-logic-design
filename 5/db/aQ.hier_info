@@ -1,0 +1,14 @@
+|aQ
+clk => ps~1.DATAIN
+rst => ps~3.DATAIN
+i => ns.D.DATAB
+i => ns.E.DATAB
+i => ns.F.DATAB
+i => ns.G.DATAB
+i => Selector0.IN2
+i => Selector2.IN1
+i => ns.H.DATAB
+i => Selector1.IN1
+w << w.DB_MAX_OUTPUT_PORT_TYPE
+
+

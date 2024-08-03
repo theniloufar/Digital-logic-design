@@ -1,0 +1,11 @@
+module registerQ(input [15:0] regin, input load, init, clk, rst, output reg[15:0] regout);
+	always@(posedge clk, posedge rst)begin
+		if(rst)
+			regout <= 16'b0;
+		else
+			if(load)
+				regout <= init ?16'b0 :regin;
+			else
+				regout <= regout;
+	end
+endmodule

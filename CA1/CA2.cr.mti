@@ -1,0 +1,59 @@
+C:/Users/NanoCamp/Desktop/DLD/CA1/3.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ripple16
+
+Top level modules:
+	ripple16
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/TB1.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/TB1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB1
+
+Top level modules:
+	TB1
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/TB2.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/TB2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB2
+
+Top level modules:
+	TB2
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/4.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MUX
+-- Compiling module block
+-- Compiling module CSA
+
+Top level modules:
+	CSA
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/1.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/TB3.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/TB3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB3
+
+Top level modules:
+	TB3
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/2.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ripple4
+
+Top level modules:
+	ripple4
+
+} {} {}} C:/Users/NanoCamp/Desktop/DLD/CA1/TB4.v {1 {vlog -work work -stats=none C:/Users/NanoCamp/Desktop/DLD/CA1/TB4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB4
+
+Top level modules:
+	TB4
+
+} {} {}}

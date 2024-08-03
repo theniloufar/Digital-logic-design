@@ -1,0 +1,53 @@
+{C:/Users/NanoCamp/Desktop/madar manteqi/6/datapath.vo} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/datapath.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+-- Compiling module hard_block
+
+Top level modules:
+	datapath
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/ROM.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/ROM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/controller.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerQ.vo} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/controllerQ.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controllerQ
+-- Compiling module hard_block
+
+Top level modules:
+	controllerQ
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/testbench.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CosTB
+
+Top level modules:
+	CosTB
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/final.vo} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/final.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module final
+-- Compiling module hard_block
+
+Top level modules:
+	final
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6/register.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6/register.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}}

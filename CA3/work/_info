@@ -1,0 +1,310 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/NanoCamp/Desktop/DLD/CA1
+vcomparator
+Z0 !s110 1715699559
+!i10b 1
+!s100 :UAkOUKhlH`Vo5VLLdBJ31
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3l6_aenzHDCKfUHYHl32K1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/NanoCamp/Desktop/DLD/CA3
+w1715679238
+8C:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v
+!i122 230
+Z4 L0 1 11
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1715699559.000000
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/4bit_comparator.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vcomparator_1bit
+R0
+!i10b 1
+!s100 YOA5z8:166OdXNToKSRZo0
+R1
+InXXFa04W6G90X0<?dD:m10
+R2
+R3
+w1715677295
+8C:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v
+!i122 229
+L0 1 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/1bit_comparator.v|
+!i113 1
+R7
+R8
+vmax_block
+Z9 !s110 1715699560
+!i10b 1
+!s100 MS0A8dGKSbK;al_CmU^Ml0
+R1
+IWGLW`iINAO`S78Kc]2Dj70
+R2
+R3
+w1715682120
+8C:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v
+!i122 232
+Z10 L0 1 13
+R5
+r1
+!s85 0
+31
+Z11 !s108 1715699560.000000
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/max_block.v|
+!i113 1
+R7
+R8
+vmean_calculator
+R9
+!i10b 1
+!s100 JeK?_`AmPXB[RmJ7FA_Mo2
+R1
+I6_TAE>AfmHIlDCfLYz<CD0
+R2
+R3
+w1715682100
+8C:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v
+!i122 233
+L0 1 7
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/mean_block.v|
+!i113 1
+R7
+R8
+vmin_block
+R9
+!i10b 1
+!s100 YQ=5D]Obg@lNZSV9W:zlW0
+R1
+IfCYY4WMXJ7dec8DbzDnLZ1
+R2
+R3
+w1715682134
+8C:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v
+!i122 231
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/min_block.v|
+!i113 1
+R7
+R8
+vstat_calculator
+R9
+!i10b 1
+!s100 >8AS9=CdUgHYGN@eeW2LZ2
+R1
+IJ^WOCflH0j546l>4VcIU42
+R2
+R3
+w1715699493
+8C:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v
+!i122 239
+L0 1 20
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/stat_calculator.v|
+!i113 1
+R7
+R8
+vtbmax
+R9
+!i10b 1
+!s100 O@eN0f6AzC[e]F75H60963
+R1
+Ik_S2OoQnKd<WToMXiZ?N;3
+R2
+R3
+w1715682502
+8C:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v
+!i122 234
+Z12 L0 2 14
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/maxTB.v|
+!i113 1
+R7
+R8
+vtbmean
+R9
+!i10b 1
+!s100 @09c6XX<0IY`42LFK87D12
+R1
+IEE[PabIJdNTJUhA8@zCiX2
+R2
+R3
+w1715682488
+8C:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v
+!i122 236
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/meanTB.v|
+!i113 1
+R7
+R8
+vtbmin
+R9
+!i10b 1
+!s100 I:3=O6bVcLWz64h_jbACe2
+R1
+I=6hX=3Il0b[zI3IX^cFOY3
+R2
+R3
+w1715682491
+8C:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v
+!i122 235
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/minTB.v|
+!i113 1
+R7
+R8
+vtbstat
+!s110 1715699561
+!i10b 1
+!s100 dTm5RAD@<:f=`Sgn3:e^61
+R1
+I777LDR_KEEIjIFXJj`E?f1
+R2
+R3
+w1715699550
+8C:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v
+!i122 240
+L0 2 25
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/statTB.v|
+!i113 1
+R7
+R8
+vtbvar
+R9
+!i10b 1
+!s100 O^OoYCmdWOakYVZFVHfJC1
+R1
+IH<IHTR^MKK3oN;84nY>a:2
+R2
+R3
+w1715682509
+8C:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v
+FC:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v
+!i122 238
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/varTB.v|
+!i113 1
+R7
+R8
+vvar_calculator
+R9
+!i10b 1
+!s100 eb1[=M>lHl[JKdgn8`K1j2
+R1
+IklZK_]PHkP>;C=jTh;4ck0
+R2
+R3
+w1715682417
+Z13 8C:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v
+Z14 FC:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v
+!i122 237
+R4
+R5
+r1
+!s85 0
+31
+R11
+Z15 !s107 C:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/DLD/CA3/var_block.v|
+!i113 1
+R7
+R8
+vvariance_calculator
+!s110 1715682313
+!i10b 1
+!s100 <Pczf2X7HjQ=_RlC6`G4[3
+R1
+IB@:<QfSK0A2Ja8R7]_[mV2
+R2
+R3
+w1715682247
+R13
+R14
+!i122 104
+R4
+R5
+r1
+!s85 0
+31
+!s108 1715682313.000000
+R15
+R16
+!i113 1
+R7
+R8

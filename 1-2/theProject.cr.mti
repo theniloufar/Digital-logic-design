@@ -1,0 +1,85 @@
+{C:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/testBenchCompare.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBenchCompare
+
+Top level modules:
+	testBenchCompare
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/circuitG.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module myGcircuit
+
+Top level modules:
+	myGcircuit
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/assign6testBench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBench6
+
+Top level modules:
+	testBench6
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/testBench5.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBench5
+
+Top level modules:
+	testBench5
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/5.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/5.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module oc7to3input
+
+Top level modules:
+	oc7to3input
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/6.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/6.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module assign6
+
+Top level modules:
+	assign6
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/testBench7.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBench7
+
+Top level modules:
+	testBench7
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/testBenchG.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBenchG
+
+Top level modules:
+	testBenchG
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/7.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/7.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module oc15to4input
+
+Top level modules:
+	oc15to4input
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/testBench.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/testBench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/assign_statement.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module assign_statement
+
+Top level modules:
+	assign_statement
+
+} {} {}} {C:/Users/NanoCamp/Desktop/madar manteqi/circuit.v} {1 {vlog -work work -stats=none {C:/Users/NanoCamp/Desktop/madar manteqi/circuit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module myTcircuit
+
+Top level modules:
+	myTcircuit
+
+} {} {}}

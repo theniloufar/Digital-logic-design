@@ -1,0 +1,417 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/NanoCamp/Desktop/New folder
+vbehavioral_ALU
+Z0 !s110 1701003356
+!i10b 1
+!s100 zULcT>]OdPmzK@gNI>@O_1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImYIK^;n<khK<c:6mol7iL0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/NanoCamp/Desktop/3
+w1700984346
+Z4 8C:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v
+Z5 FC:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v
+!i122 194
+Z6 L0 5 4393
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1701003356.000000
+Z9 !s107 C:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/behavioral_ALU_synth.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nbehavioral_@a@l@u
+vbehavioral_ALU_synth
+!s110 1700983147
+!i10b 1
+!s100 jk1NFRa5P`AE6S7Vi1oi<2
+R1
+I8i:Xim2d^DZ9DaV@o1]WX1
+R2
+R3
+w1700922863
+R4
+R5
+!i122 116
+R6
+R7
+r1
+!s85 0
+31
+!s108 1700983147.000000
+R9
+R10
+!i113 1
+R11
+R12
+nbehavioral_@a@l@u_synth
+vbehavioral_ALU_tb
+Z13 !s110 1701003355
+!i10b 1
+!s100 bGe6^GSm0<VFPFEJf`fPL2
+R1
+IV]b5mjIE0E9>6bKHX]a_63
+R2
+R3
+w1700922344
+8C:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v
+FC:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v
+!i122 190
+Z14 L0 2 17
+R7
+r1
+!s85 0
+31
+Z15 !s108 1701003355.000000
+!s107 C:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/behavioral_ALU_tb.v|
+!i113 1
+R11
+R12
+nbehavioral_@a@l@u_tb
+vbehavioral_structural_tb
+!s110 1701003357
+!i10b 1
+!s100 fANi53H5nZ]nTVR<[P:3^2
+R1
+IFzDb;30F=c>7<Bn=l8g>70
+R2
+R3
+w1701003347
+8C:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v
+FC:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v
+!i122 196
+R14
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/behavioral_structural_tb.v|
+!i113 1
+R11
+R12
+vDFF
+R13
+!i10b 1
+!s100 9Kc]>n0;m0OTK<i3l8?_:0
+R1
+IJ?SaBnXhe<QfBnG1hhUMU2
+R2
+R3
+Z16 w1700984006
+Z17 8C:/Users/NanoCamp/Desktop/3/mycells.v
+Z18 FC:/Users/NanoCamp/Desktop/3/mycells.v
+!i122 191
+L0 20 6
+R7
+r1
+!s85 0
+31
+R15
+Z19 !s107 C:/Users/NanoCamp/Desktop/3/mycells.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/mycells.v|
+!i113 1
+R11
+R12
+n@d@f@f
+vDFF_PP0
+R13
+!i10b 1
+!s100 Ig4QjH@^Nee5aAjSWm?Q_2
+R1
+I]ej3jdGR8mG8nK<7bY3UI1
+R2
+R3
+R16
+R17
+R18
+!i122 191
+L0 27 10
+R7
+r1
+!s85 0
+31
+R15
+R19
+R20
+!i113 1
+R11
+R12
+n@d@f@f_@p@p0
+vDFF_PP1
+R13
+!i10b 1
+!s100 UiV@]1Uc:BLDF`BdJoboO2
+R1
+IQkmEanO93CCg:jePHQeM31
+R2
+R3
+R16
+R17
+R18
+!i122 191
+L0 38 10
+R7
+r1
+!s85 0
+31
+R15
+R19
+R20
+!i113 1
+R11
+R12
+n@d@f@f_@p@p1
+vNAND
+R13
+!i10b 1
+!s100 ;FYa?T0d`UJ_j2Kd5bbC`3
+R1
+IhRB90oWiG1fQLXZM`c4>m2
+R2
+R3
+R16
+R17
+R18
+!i122 191
+L0 8 5
+R7
+r1
+!s85 0
+31
+R15
+R19
+R20
+!i113 1
+R11
+R12
+n@n@a@n@d
+vNOR
+R13
+!i10b 1
+!s100 j=STTK6lY<;`iK1[kIOK01
+R1
+Ige7=Bca:ak?ok`[cmi;4H2
+R2
+R3
+R16
+R17
+R18
+!i122 191
+L0 14 5
+R7
+r1
+!s85 0
+31
+R15
+R19
+R20
+!i113 1
+R11
+R12
+n@n@o@r
+vNOT
+R13
+!i10b 1
+!s100 i52275bUZc<k7IRk;W4==0
+R1
+I0hjEI7^P<fD9NZccPhad32
+R2
+R3
+R16
+R17
+R18
+!i122 191
+L0 2 5
+R7
+r1
+!s85 0
+31
+R15
+R19
+R20
+!i113 1
+R11
+R12
+n@n@o@t
+vsimple
+!s110 1700902122
+!i10b 1
+!s100 W3gbe<@0[4QF>Y^A9j5T?2
+R1
+IPd4<V5R@58Z`<=9BLA69m1
+R2
+R3
+w1643480796
+8C:/Users/NanoCamp/Desktop/3/synth.v
+FC:/Users/NanoCamp/Desktop/3/synth.v
+!i122 19
+L0 5 50
+R7
+r1
+!s85 0
+31
+!s108 1700902122.000000
+!s107 C:/Users/NanoCamp/Desktop/3/synth.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/synth.v|
+!i113 1
+R11
+R12
+vstructual_ALU
+!s110 1700987049
+!i10b 1
+!s100 T3J=6i5Y<ijf9_7NJ;4k^3
+R1
+ITClzb0@XZi>5k<>hKb1z61
+R2
+R3
+w1700921593
+Z21 8C:/Users/NanoCamp/Desktop/3/structural_ALU.v
+Z22 FC:/Users/NanoCamp/Desktop/3/structural_ALU.v
+!i122 171
+Z23 L0 1 23
+R7
+r1
+!s85 0
+31
+!s108 1700987049.000000
+Z24 !s107 C:/Users/NanoCamp/Desktop/3/structural_ALU.v|
+Z25 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/structural_ALU.v|
+!i113 1
+R11
+R12
+nstructual_@a@l@u
+vstructual_ALU_synth
+!s110 1700987020
+!i10b 1
+!s100 aW[Lf_oX=zX10kh9Ce4N;0
+R1
+IVRhcRVD1@UECTN@=3`FFV1
+R2
+R3
+w1700987013
+Z26 8C:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v
+Z27 FC:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v
+!i122 167
+Z28 L0 5 3153
+R7
+r1
+!s85 0
+31
+!s108 1700987020.000000
+Z29 !s107 C:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v|
+Z30 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/structural_ALU_synth.v|
+!i113 1
+R11
+R12
+nstructual_@a@l@u_synth
+vstructual_ALU_tb
+!s110 1700986705
+!i10b 1
+!s100 Jn1Xk`AH`T:7OhVA2o5R?3
+R1
+I3O5C>SjKIf;ml`L_EM1dD1
+R2
+R3
+w1700984528
+Z31 8C:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v
+Z32 FC:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v
+!i122 144
+R14
+R7
+r1
+!s85 0
+31
+!s108 1700986705.000000
+Z33 !s107 C:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/NanoCamp/Desktop/3/structural_ALU_tb.v|
+!i113 1
+R11
+R12
+nstructual_@a@l@u_tb
+vstructural_ALU
+R0
+!i10b 1
+!s100 KG7n6IkKU2ITLQcEU4_@B3
+R1
+I<<ehEcQ_f>l8LmU7LG<b50
+R2
+R3
+w1700987095
+R21
+R22
+!i122 192
+R23
+R7
+r1
+!s85 0
+31
+R8
+R24
+R25
+!i113 1
+R11
+R12
+nstructural_@a@l@u
+vstructural_ALU_synth
+R0
+!i10b 1
+!s100 zI2C4mHAWGnZaTA9T>F=R3
+R1
+IK7Gm7l4A@Xcd_DcGk[[d;1
+R2
+R3
+w1700987259
+R26
+R27
+!i122 195
+R28
+R7
+r1
+!s85 0
+31
+R8
+R29
+R30
+!i113 1
+R11
+R12
+nstructural_@a@l@u_synth
+vstructural_ALU_tb
+R0
+!i10b 1
+!s100 WBdzMbdePzMmdM?oFmePP2
+R1
+ITmgJY15bdRIeO9j>]fNzb2
+R2
+R3
+w1700986755
+R31
+R32
+!i122 193
+R14
+R7
+r1
+!s85 0
+31
+R8
+R33
+R34
+!i113 1
+R11
+R12
+nstructural_@a@l@u_tb

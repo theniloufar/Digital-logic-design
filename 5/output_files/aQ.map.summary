@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Wed Jan 03 12:30:50 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : aQ
+Top-level Entity Name : aQ
+Family : Cyclone IV GX
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

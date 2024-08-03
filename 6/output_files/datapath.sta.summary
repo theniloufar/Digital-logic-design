@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'loadt'
+Slack : -10.124
+TNS   : -148.677
+
+Type  : Slow 1200mV 125C Model Setup 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : -2.326
+TNS   : -17.424
+
+Type  : Slow 1200mV 125C Model Setup 'loadr'
+Slack : -2.208
+TNS   : -32.880
+
+Type  : Slow 1200mV 125C Model Setup 'loadx'
+Slack : -1.960
+TNS   : -28.748
+
+Type  : Slow 1200mV 125C Model Setup 'clk'
+Slack : -1.816
+TNS   : -4.159
+
+Type  : Slow 1200mV 125C Model Hold 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'loadr'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'clk'
+Slack : 0.729
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'loadt'
+Slack : 1.204
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'loadx'
+Slack : 1.250
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'loadr'
+Slack : -3.000
+TNS   : -32.712
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'loadt'
+Slack : -3.000
+TNS   : -32.712
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'loadx'
+Slack : -3.000
+TNS   : -32.712
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -10.428
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'loadt'
+Slack : -8.588
+TNS   : -126.711
+
+Type  : Slow 1200mV -40C Model Setup 'loadr'
+Slack : -2.020
+TNS   : -31.294
+
+Type  : Slow 1200mV -40C Model Setup 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : -1.885
+TNS   : -14.000
+
+Type  : Slow 1200mV -40C Model Setup 'loadx'
+Slack : -1.700
+TNS   : -25.066
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -1.395
+TNS   : -2.968
+
+Type  : Slow 1200mV -40C Model Hold 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'loadr'
+Slack : 0.533
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'loadt'
+Slack : 0.991
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'loadx'
+Slack : 1.071
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'loadr'
+Slack : -3.000
+TNS   : -27.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'loadt'
+Slack : -3.000
+TNS   : -27.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'loadx'
+Slack : -3.000
+TNS   : -27.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -9.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'loadt'
+Slack : -4.235
+TNS   : -61.581
+
+Type  : Fast 1200mV -40C Model Setup 'loadx'
+Slack : -1.037
+TNS   : -15.056
+
+Type  : Fast 1200mV -40C Model Setup 'loadr'
+Slack : -0.988
+TNS   : -15.421
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -0.805
+TNS   : -1.377
+
+Type  : Fast 1200mV -40C Model Setup 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : -0.742
+TNS   : -4.830
+
+Type  : Fast 1200mV -40C Model Hold 'loadr'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'loadx'
+Slack : 0.681
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'loadt'
+Slack : 0.736
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'loadt'
+Slack : -3.000
+TNS   : -19.469
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'loadx'
+Slack : -3.000
+TNS   : -19.452
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'loadr'
+Slack : -3.000
+TNS   : -19.448
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.078
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'counter:inst3|lpm_counter:LPM_COUNTER_component|cntr_1lk:auto_generated|counter_reg_bit[2]'
+Slack : 0.398
+TNS   : 0.000
+
+------------------------------------------------------------
