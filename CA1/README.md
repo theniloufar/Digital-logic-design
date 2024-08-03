@@ -49,11 +49,3 @@ Each module can be tested using its associated testbench file. The testbenches a
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or additional features, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, please contact [Your Name] at [your-email@example.com].
