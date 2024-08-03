@@ -1,5 +1,5 @@
 
-# Project: Design of Arithmetic Circuits
+# Project:  Design of Arithmetic Circuits
 
 This project focuses on the design and implementation of various arithmetic circuits using Verilog. It includes modules for basic arithmetic operations and statistical calculations, along with testbenches to validate their functionalities. The project demonstrates the use of SystemVerilog for hardware description and is intended for simulation with the ModelSim software.
 
