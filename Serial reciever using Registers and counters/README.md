@@ -39,6 +39,3 @@ To use the modules and run the testbenches, you will need a Verilog simulator su
 
 Each module can be tested using its associated testbench file. The testbenches are designed to verify the functionality of each module. Simulate the testbenches using your Verilog simulator to check the outputs.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or additional features, please fork the repository and submit a pull request.

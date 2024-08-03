@@ -46,6 +46,3 @@ Each module can be tested using its associated testbench file. The testbenches a
 - **Custom Logic Module**: Simulate `Q3TB.v` to check the custom logic.
 - **Majority Detector**: Simulate `majorityTB.v` to verify the majority detection logic.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or additional features, please fork the repository and submit a pull request.
