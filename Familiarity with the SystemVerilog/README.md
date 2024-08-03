@@ -1,5 +1,5 @@
 
-# Project: Digital Logic Design Components
+# Project:  Digital Logic Design Components
 
 This project contains several digital logic design components implemented in Verilog, along with associated testbenches. The project demonstrates various techniques and modules commonly used in digital systems design.
 
