@@ -16,7 +16,7 @@ This project involves the design and implementation of various logic modules usi
   - `3TB.v`: Verifies the functionality of the module in `3.v`.
 
 - **Documentation:**
-  - `NMortazavi220701096-CA04-ECE367.pdf`: A report detailing the design and implementation of the modules.
+  - `report`: A report detailing the design and implementation of the modules.
 
 ## Installation
 
