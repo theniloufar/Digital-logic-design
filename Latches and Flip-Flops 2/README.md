@@ -19,7 +19,7 @@ This project involves the design and implementation of various logic modules usi
   - `shiftreg.bsf`: Block symbol file for a shift register.
 
 - **Documentation:**
-  - `NMortazavi220701096-CA05-ECE367.pdf`: A report detailing the design and implementation of the modules.
+  - `report`: A report detailing the design and implementation of the modules.
 
 ## Installation
 
