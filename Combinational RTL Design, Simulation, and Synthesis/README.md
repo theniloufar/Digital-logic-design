@@ -19,7 +19,7 @@ This project involves the design and implementation of an Arithmetic Logic Unit 
   - `structural_ALU_tb.v`: Verifies the functionality of the structural ALU.
 
 - **Documentation:**
-  - `NiloufarMortazavi220701096-CA03-ECE367.pdf`: A report detailing the design and implementation of the ALU.
+  - `report`: A report detailing the design and implementation of the ALU.
 
 ## Installation
 
