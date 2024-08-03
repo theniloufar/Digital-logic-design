@@ -1,5 +1,5 @@
 
-# Project: Digital Logic Design - Assignment 02
+# Project:  Digital Logic Design - Assignment 02
 
 This project contains various digital logic design components implemented in Verilog, accompanied by testbenches to validate their functionalities. This work focuses on developing proficiency in using the SystemVerilog hardware description language and the ModelSim simulator software.
 
